@@ -11,23 +11,46 @@
   <body class="bg-gradient-to-b from-orange-100 via-orange-200 to-orange-300 min-h-screen">
     <header class="bg-gradient-to-bl from-orange-50 to-orange-100 backdrop-blur-sm fixed w-[95%] left-1/2 -translate-x-1/2 z-50 shadow-md rounded-md mt-4">
       <nav class="flex justify-between items-center p-4 max-w-5xl mx-auto">
+
+        <!-- Logo / Name -->
         <div>
           <a href="index.html" class="text-lg font-semibold tracking-wide text-gray-700 hover:text-gray-900 transition-colors">
             JAMIU ADEYEMO
           </a>
         </div>
 
-        <div class=" space-x-6 text-gray-600 font-medium">
+        <!-- Desktop Menu -->
+        <div class=" space-x-6 text-gray-600 font-medium md:flex hidden lg:flex">
           <a href="#about" class="hover:text-gray-900 transition-colors duration-300">About</a>
           <a href="#skills" class="hover:text-gray-900 transition-colors duration-300">Skills</a>
           <a href="#projects" class="hover:text-gray-900 transition-colors duration-300">Projects</a>
           <a href="#contact" class="hover:text-gray-900 transition-colors duration-300">Contact</a>
         </div>
 
-        <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300">
+        <!-- Resume Button (Desktop Only) -->
+        <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300 md:flex hidden lg:flex">
           My Resume
         </a>
+
+        <!-- Hamburger Button (Mobile Only) -->
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1.5 focus:outline-none">
+          <span class="block w-6 h-0.5 bg-gray-700"></span>
+          <span class="block w-6 h-0.5 bg-gray-700"></span>
+          <span class="block w-6 h-0.5 bg-gray-700"></span>
+        </button>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden flex flex-col items-center space-y-4 pb-6 bg-gradient-to-b from-orange-50 to-orange-100 text-gray-700 font-medium rounded-b-md shadow-md md:hidden">
+          <a href="#about" class="hover:text-gray-900 transition-colors duration-300">About</a>
+          <a href="#projects" class="hover:text-gray-900 transition-colors duration-300">Projects</a>
+          <a href="#contact" class="hover:text-gray-900 transition-colors duration-300">Contact</a>
+          <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300">
+            My Resume
+          </a>
+        </div>
       </nav>
     </header>
+
+    <script src="script.js"></script>
   </body>
 </html>
