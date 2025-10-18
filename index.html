@@ -9,7 +9,7 @@
   </head>
 
   <body class="bg-gradient-to-b from-orange-100 via-orange-200 to-orange-300 min-h-screen">
-    <header class="bg-gradient-to-bl from-orange-50 to-orange-100 backdrop-blur-sm fixed w-[95%] left-1/2 -translate-x-1/2 z-50 shadow-md rounded-md mt-4">
+    <header class="bg-gradient-to-bl from-orange-50 to-orange-100 backdrop-blur-sm relative w-[95%] left-1/2 -translate-x-1/2 z-50 shadow-md rounded-md mt-4">
       <nav class="flex justify-between items-center p-4 max-w-5xl mx-auto">
 
         <!-- Logo / Name -->
@@ -50,6 +50,58 @@
         </div>
       </nav>
     </header>
+    <!-- Hero Section -->
+<section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 md:px-12 py-24 ">
+  <!-- Text Content -->
+  <div class="text-center md:text-left md:w-1/2 space-y-6">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
+      Building <span class="text-orange-500">Smart</span><br />
+      & <span class="text-orange-600">Scalable</span><br />
+      Web Solutions
+    </h1>
+
+    <p class="text-gray-700 text-lg md:text-xl max-w-md mx-auto md:mx-0">
+      A web developer passionate about performance, security, and exceptional user experience; from concept to clean code.
+    </p>
+
+    <div class="flex justify-center md:justify-start space-x-4 pt-4">
+      <a href="#projects" class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-orange-600 transition-colors duration-300">
+        View Portfolio
+      </a>
+      <a href="#contact" class="border border-orange-500 text-orange-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors duration-300">
+        Contact Me
+      </a>
+    </div>
+
+    <div class="flex justify-center md:justify-start space-x-4 pt-6">
+      <a href="https://www.linkedin.com/in/callmejaymafia">
+        <img src="./icons/linkedin-icon.png" class="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+      </a>
+      <a href="https://github.com/callmejaymafia" >
+        <img src="./icons/github-icon.png" class="w-8 h-8 hover:scale-110 transition-transform duration-300" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Image -->
+  <div class="mt-12  md:w-1/2 flex justify-center lg:animate-bounce">
+    <div class="relative">
+      <div class="absolute -top-6 -left-6 w-64 h-64 bg-orange-200 rounded-3xl blur-3xl opacity-60"></div>
+      <img
+        src="./images/hero-image-avatar.png"
+        alt="Hero Image Avatar"
+        class="relative w-80 h-80 object-cover rounded-3xl shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+<!-- About Section -->
+    <section id="about" class="container mx-auto max-w-4xl px-8 py-12 rounded-lg bg-orange-100 bg-opacity-100 shadow-md  text-center">
+      <h2 class="font-bold text-2xl mb-4">About Me</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Hi there; I’m Jamiu Adeyemo, a web developer who loves turning complex ideas into sleek, interactive, and high-performing web applications. I blend creativity with clean code to build digital experiences that are not only functional but genuinely enjoyable to use. When I’m not deep in code, I’m exploring new tech stacks, experimenting with design trends, or contributing to open-source projects that push the web forward.
+      </p>
+    </section>
 
     <script src="script.js"></script>
   </body>
