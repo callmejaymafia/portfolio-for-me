@@ -28,7 +28,7 @@
         </div>
 
         <!-- Resume Button (Desktop Only) -->
-        <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300 md:flex hidden lg:flex">
+        <a href="#" download class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300 md:flex hidden lg:flex">
           My Resume
         </a>
 
@@ -43,8 +43,9 @@
         <div id="mobile-menu" class="hidden flex flex-col items-center space-y-4 pb-6 bg-gradient-to-b from-orange-50 to-orange-100 text-gray-700 font-medium rounded-b-md shadow-md md:hidden">
           <a href="#about" class="hover:text-gray-900 transition-colors duration-300">About</a>
           <a href="#projects" class="hover:text-gray-900 transition-colors duration-300">Projects</a>
+          <a href="#skills" class="hover:text-gray-900 transition-colors duration-300">Skills</a>
           <a href="#contact" class="hover:text-gray-900 transition-colors duration-300">Contact</a>
-          <a href="#" class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300">
+          <a href="#" download class="bg-white text-gray-600 px-4 py-2 rounded-full font-semibold shadow-md hover:text-gray-800 hover:shadow-lg transition-shadow duration-300">
             My Resume
           </a>
         </div>
@@ -95,6 +96,7 @@
     </div>
   </div>
 </section>
+
 <!-- About Section -->
     <section id="about" class="container mx-auto max-w-4xl px-8 py-12 rounded-lg bg-orange-100 bg-opacity-100 shadow-md  text-center">
       <h2 class="font-bold text-2xl mb-4">About Me</h2>
@@ -102,6 +104,50 @@
         Hi there; I’m Jamiu Adeyemo, a web developer who loves turning complex ideas into sleek, interactive, and high-performing web applications. I blend creativity with clean code to build digital experiences that are not only functional but genuinely enjoyable to use. When I’m not deep in code, I’m exploring new tech stacks, experimenting with design trends, or contributing to open-source projects that push the web forward.
       </p>
     </section>
+
+<!-- Skills Section -->
+<section id="skills" class="m-8">
+  <h2 class="text-center font-bold text-2xl mb-4">Skills Progress</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center text-gray-700 font-bold">
+
+    <!-- HTML -->
+    <div class="bg-orange-100 p-4 rounded-2xl">
+      <h3>HTML</h3>
+      <div class="grid place-items-center min-h-[200px]">
+        <div class="circle w-32 h-32" data-percent="95"></div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="bg-orange-100 p-4 rounded-2xl">
+      <h3>CSS</h3>
+      <div class="grid place-items-center min-h-[200px]">
+        <div class="circle w-32 h-32" data-percent="90"></div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="bg-orange-100 p-4 rounded-2xl">
+      <h3>JavaScript</h3>
+      <div class="grid place-items-center min-h-[200px]">
+        <div class="circle w-32 h-32" data-percent="70"></div>
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="bg-orange-100 p-4 rounded-2xl">
+      <h3>Python</h3>
+      <div class="grid place-items-center min-h-[200px]">
+        <div class="circle w-32 h-32" data-percent="50"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects Section -->
+
 
     <script src="script.js"></script>
   </body>
