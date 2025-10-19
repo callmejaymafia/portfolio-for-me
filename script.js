@@ -28,3 +28,7 @@
       if (curr === target) clearInterval(animate);
     }, 20);
   });
+
+
+  //Copyright year
+   document.getElementById("year").textContent = new Date().getFullYear();
